@@ -48,6 +48,7 @@ flashGenomeAligner/
     cmake --build external/parasail/build -j
     ```
     On Linux/macOS the build will produce `external/parasail/build/libparasail.so` (or `.a`).
+    
     On Windows it will produce `parasail.lib` and/or `parasail.dll` depending on the generator/toolchain.
 
 4.  **Build with CMake (Recommended for Performance):**
@@ -64,8 +65,8 @@ flashGenomeAligner/
     cmake --build build -j
     ```
 
-   **Windows (Visual Studio / multi-config generators)**
-
+    **Windows (Visual Studio / multi-config generators)**
+    
     ```bash
     # Configure (Visual Studio generator creates multi-config builds)
     cmake -S . -B build
